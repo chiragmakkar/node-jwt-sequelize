@@ -25,9 +25,9 @@ export const User = {
                 }
             }
         )
-        console.log(user.toJSON())
+        // console.log(user.toJSON())
         if(user) return await Users.update(obj, { where : { id : user.toJSON().id } })
-        // else return null
+        else return null
         // Users.update(obj, {where : {email}}).then(result => {
         //     console.log(result)
         // })

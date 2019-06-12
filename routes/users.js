@@ -3,7 +3,6 @@ import { User } from '../utils/users';
 import jwt from 'jsonwebtoken';
 import { auth } from '../utils/auth';
 import bcrypt from 'bcrypt';
-import { Users } from '../utils/connectDB';
 const router = express.Router();
 
 router.post('/signup', async (req, res, next) => {
